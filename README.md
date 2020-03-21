@@ -3,8 +3,6 @@ Cachu Web Server
 
 ``` sh
 npm init
-```
-
-``` sh
-npm install 
+npm install
+npm start
 ```
