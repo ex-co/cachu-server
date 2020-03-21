@@ -1,0 +1,25 @@
+{
+  "name": "cachuwebserver",
+  "version": "1.0.0",
+  "description": "Cachu Web Server using Node JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ye-geeee/cachuWebServer.git"
+  },
+  "keywords": [
+    "nodejs",
+    "web",
+    "server"
+  ],
+  "author": "yezi.kang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ye-geeee/cachuWebServer/issues"
+  },
+  "homepage": "https://github.com/ye-geeee/cachuWebServer#readme"
+}
