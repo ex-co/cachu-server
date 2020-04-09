@@ -21,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/ye-geeee/cachuWebServer/issues"
   },
-  "homepage": "https://github.com/ye-geeee/cachuWebServer#readme"
+  "homepage": "https://github.com/ye-geeee/cachuWebServer#readme",
+  "devDependencies": {
+    "mocha": "^7.1.1"
+  },
+  "dependencies": {
+    "nodemailer": "^6.4.6",
+    "winston": "^3.2.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6"
+  }
 }
