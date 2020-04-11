@@ -7,6 +7,14 @@
     "start": "node index.js",
     "test": "mocha"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": ["./node_modules/.bin/eslint --fix", "git add"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ye-geeee/cachuWebServer.git"
@@ -16,13 +24,21 @@
     "web",
     "server"
   ],
-  "author": "yezi.kang",
+  "author": "exco",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ye-geeee/cachuWebServer/issues"
   },
   "homepage": "https://github.com/ye-geeee/cachuWebServer#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.3",
     "mocha": "^7.1.1"
   },
   "dependencies": {
