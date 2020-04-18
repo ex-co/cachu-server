@@ -14,7 +14,10 @@
     }
   },
   "lint-staged": {
-    "*.js": ["./node_modules/.bin/eslint --fix", "git add"]
+    "*.js": [
+      "./node_modules/.bin/eslint --fix",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -44,10 +47,10 @@
     "nodemon": "^2.0.3"
   },
   "dependencies": {
-    "nodemailer": "^6.4.6",
-    "winston": "^3.2.1",
     "express": "^4.17.1",
     "mongodb": "^3.5.5",
-    "mongoose": "^5.9.6"
+    "mongoose": "^5.9.6",
+    "nodemailer": "^6.4.6",
+    "winston": "^3.2.1"
   }
 }
