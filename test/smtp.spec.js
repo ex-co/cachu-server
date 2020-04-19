@@ -1,13 +1,13 @@
-var should = require('should');
-var validateEmail = require('../lib/smtp.js').validateEmail;
+const expect = require('chai').expect;
+const smtp = require('../lib/smtp');
 
-describe('CACHU SMTP TEST', function () {
-    describe('validateEmail', function () {
-        it('Email Address Validation Test: Proper Email', function () {
-            return validateEmail('test@test.test').should.be.exactly(true);
+describe('SMTP TEST MODULE', () =>  {
+    describe('Test Function: isValidEmail(email)', () => {
+        it('should be false with wrong e-mail format', () => {
+            return expect(smtp.isValidEmail('test')).to.equal(false);
         });
-        it('Email Address Validation Test: Wrong Email', function () {
-            return validateEmail('test').should.be.exactly(false);
+        it('should be true with proper e-mail format', () => {
+            return expect(smtp.isValidEmail('test@test.com')).to.equal(true);
         });
     });
 });

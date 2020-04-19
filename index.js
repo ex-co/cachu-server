@@ -1,12 +1,11 @@
-var http = require('http');
-var fs = require('fs');
-var app = http.createServer(function(request,response){
-    var url = request.url;
-    if(request.url == '/'){
-      url = '/index.html';
-    }
-    response.writeHead(200);
-    response.end(fs.readFileSync(__dirname + url));
+const express = require('express');
+const app = express();
+
+app.get('/', (request, response) => {
+    response.send("<h1>Hello Cachu</h1>");
 });
 
-app.listen(3000);
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
